@@ -74,8 +74,8 @@
     <!-- Слайдер -->
     <section class="slider">
       <h2 class="visually-hidden">Самые популярные товары</h2>
-      <section class="slider-wrapper">
-        <ol class="slider-list">
+      <div class="slider-wrapper">
+        <ul class="slider-list">
           <li class="slider-item">
             <img class="slider-item-image" alt="Квадрокоптер с лазером (пиу-пиу)" src="">
             <h2 class="slider-item-number"> 01 </h2>
@@ -96,7 +96,7 @@
             </ul>
           </li>
           <li class="slider-item">
-            <img class="slider-item-image" src = "" alt="Фитнес-браслет">
+            <img class="slider-item-image" src="" alt="Фитнес-браслет">
             <h2 class="slider-pagination-item-number"> 02 </h2>
             <h3 class="slider-item-slogan"> Худеем правильно!</h3>
             <p class="slider-item-descripion">Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать
@@ -112,7 +112,7 @@
             </ul>
           </li>
           <li class="slider-item">
-            <img class="slider-item-image" src = "" alt="Селфи-палка">
+            <img class="slider-item-image" src="" alt="Селфи-палка">
             <h2 class="slider-pagination-item-number"> 03 </h2>
             <h3 class="slider-item-slogan"> Делай селфи, как Бен Стиллер! </h3>
             <p class="slider-item-descripion">Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь,
@@ -133,14 +133,16 @@
               </li>
             </ul>
           </li>
-        </ol>
-      </section>
-      <button class="slider-arrows slider-prev" type="button">
-        <span class="visually-hidden">Предыдущий товар</span>
-      </button>
-      <button class="slider-arrows slider-next" type="button">
-        <span class="visually-hidden">Следующий товар</span>
-      </button>
+        </ul>
+      </div>
+      <div>
+        <button class="slider-arrows slider-prev" type="button">
+          <span class="visually-hidden">Предыдущий товар</span>
+        </button>
+        <button class="slider-arrows slider-next" type="button">
+          <span class="visually-hidden">Следующий товар</span>
+        </button>
+      </div>
       <ol class="slider-dots">
         <li class="slider-pagination-item">
           <button class="slider-pagination-button slider-pagination-button-current" type="button">
@@ -215,7 +217,7 @@
           <h3 class="tab-title">Кредит</h3>
         </li>
       </ul>
-      <ol class="service-categories">
+      <ul class="service-categories">
         <li class="service-item-current">
           <h3 class="service-title">Доставка</h3>
           <p class="service-description"> Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно
@@ -234,7 +236,7 @@
             наиболее выгодные условия
             кредита. Выгодные для банка, разумеется.</p>
         </li>
-      </ol>
+      </ul>
     </section>
     <!-- редкий товар под заказ-->
     <section class="delivery">
