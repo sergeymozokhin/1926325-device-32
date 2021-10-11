@@ -12,9 +12,14 @@
       <a class="navigation-logo" href="index.html">
         <img class="page-header-logo" alt="Логотип магазина «Девайс»" src="">
       </a>
-      <ul class="navigation-list navigation-user">
+      <ul class="navigation-list-top">
         <li class="navigation-item">
-          <a class="navigation-link" href="#">Поиск по сайту</a>
+          <form class="search-form" action="https://echo.htmlacademy.ru/" method="post">
+            <input class="searh-input" placeholder="Поиск по сайту" name="site-search">
+            <button class="button search-button" type="submit">
+              <span class="search-name">Найти</span>
+            </button>
+          </form>
         </li>
         <li class="navigation-item">
           <a class="navigation-link" href="#">Войти</a>
@@ -26,7 +31,7 @@
           <a class="navigation-link" href="#">Корзина</a>
         </li>
       </ul>
-      <ul class="navigation-list">
+      <ul class="navigation-list-bottom">
         <li class="navigation-item">
           <span class="navigation-item-nested"> Каталог товаров </span>
           <button class="navigation-menu" type="button">
@@ -69,75 +74,88 @@
     <!-- Слайдер -->
     <section class="slider">
       <h2 class="visually-hidden">Самые популярные товары</h2>
-      <img class="slider-image" src="" alt="Образец популярного товара">
-      <button class="slider-button slider-prev" type="button">
+      <section class="slider-wrapper">
+        <ol class="slider-list">
+          <li class="slider-item">
+            <img class="slider-item-image" alt="Квадрокоптер с лазером (пиу-пиу)" src="">
+            <h2 class="slider-item-number"> 01 </h2>
+            <h3 class="slider-item-slogan"> Порхает как бабочка, жалит как пчела!</h3>
+            <p class="slider-item-descripion">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером,
+              замаскированным под стандартную
+              камеру. </p>
+            <ul>
+              <li class="slider-item-specification">
+                <b> 800 м </b> Дальность полета
+              </li>
+              <li class="slider-item-specification">
+                <b> 50 м </b> Радиус поражения
+              </li>
+              <li>
+                <a class="slider-item-link" href="#">подробнее</a>
+              </li>
+            </ul>
+          </li>
+          <li class="slider-item">
+            <img class="slider-item-image" src = "" alt="Фитнес-браслет">
+            <h2 class="slider-pagination-item-number"> 02 </h2>
+            <h3 class="slider-item-slogan"> Худеем правильно!</h3>
+            <p class="slider-item-descripion">Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать
+              занятия
+              и соблюдать диету. </p>
+            <ul>
+              <li class="slider-item-specification">
+                <b>48 часов</b> Без подзарядки
+              </li>
+              <li>
+                <a class="slider-item-link" href="#">подробнее</a>
+              </li>
+            </ul>
+          </li>
+          <li class="slider-item">
+            <img class="slider-item-image" src = "" alt="Селфи-палка">
+            <h2 class="slider-pagination-item-number"> 03 </h2>
+            <h3 class="slider-item-slogan"> Делай селфи, как Бен Стиллер! </h3>
+            <p class="slider-item-descripion">Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь,
+              Карл!) метров длиной и весом всего 5 кг.
+            </p>
+            <ul>
+              <li class="slider-item-specification">
+                <b> 8.5 м </b> Длина палки
+              </li>
+              <li class="slider-item-specification">
+                <b> 5 кг </b> Вес палки
+              </li>
+              <li class="slider-item-specification">
+                <b> Карбон </b> Материал
+              </li>
+              <li>
+                <a class="slider-item-link" href="#">подробнее</a>
+              </li>
+            </ul>
+          </li>
+        </ol>
+      </section>
+      <button class="slider-arrows slider-prev" type="button">
         <span class="visually-hidden">Предыдущий товар</span>
       </button>
-      <button class="slider-button slider-next" type="button">
+      <button class="slider-arrows slider-next" type="button">
         <span class="visually-hidden">Следующий товар</span>
       </button>
-      <ol class="slider-pagination">
+      <ol class="slider-dots">
         <li class="slider-pagination-item">
           <button class="slider-pagination-button slider-pagination-button-current" type="button">
-            <span class="visually-hidden"> Квадрокоптер с лазером (пиу-пиу) </span>
+            <span class="visually-hidden">Квадрик</span>
           </button>
-          <h2 class="slider-pagination-item-number"> 01 </h2>
-          <h3 class="slider-item-slogan"> Порхает как бабочка, жалит как пчела!</h3>
-          <p class="slider-item-descripion">Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером,
-            замаскированным под стандартную
-            камеру. </p>
-          <ul>
-            <li class="slider-item-specification">
-              <b> 800 м </b> Дальность полета
-            </li>
-            <li class="slider-item-specification">
-              <b> 50 м </b> Радиус поражения
-            </li>
-            <li>
-              <a class="slider-item-link" href="#">подробнее</a>
-            </li>
-          </ul>
         </li>
         <li class="slider-pagination-item">
           <button class="slider-pagination-button" type="button">
-            <span class="visually-hidden"> Фитнес-браслет </span>
+            <span class="visually-hidden">Трекер</span>
           </button>
-          <h2 class="slider-pagination-item-number"> 02 </h2>
-          <h3 class="slider-item-slogan"> Худеем правильно!</h3>
-          <p class="slider-item-descripion">Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия
-            и соблюдать диету. </p>
-          <ul>
-            <li class="slider-item-specification">
-              <b>48 часов</b> Без подзарядки
-            </li>
-            <li>
-              <a class="slider-item-link" href="#">подробнее</a>
-            </li>
-          </ul>
         </li>
         <li class="slider-pagination-item">
           <button class="slider-pagination-button" type="button">
-            <span class="visually-hidden"> Селфи-палка </span>
+            <span class="visually-hidden">Монопод</span>
           </button>
-          <h2 class="slider-pagination-item-number"> 03 </h2>
-          <h3 class="slider-item-slogan"> Делай селфи, как Бен Стиллер! </h3>
-          <p class="slider-item-descripion">Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь,
-            Карл!) метров длиной и весом всего 5 кг.
-          </p>
-          <ul>
-            <li class="slider-item-specification">
-              <b> 8.5 м </b> Длина палки
-            </li>
-            <li class="slider-item-specification">
-              <b> 5 кг </b> Вес палки
-            </li>
-            <li class="slider-item-specification">
-              <b> Карбон </b> Материал
-            </li>
-            <li>
-              <a class="slider-item-link" href="#">подробнее</a>
-            </li>
-          </ul>
         </li>
       </ol>
     </section>
@@ -186,20 +204,31 @@
     <!-- Сервисы в табах-->
     <section class="services">
       <h2 class="visually-hidden">Наши серисы</h2>
-      <ol class="service-tab">
+      <ul class="service-tabs">
         <li class="tab-item-current">
+          <h3 class="tab-title">Доставка</h3>
+        </li>
+        <li class="tab-itemt">
+          <h3 class="tab-title">Гарантия</h3>
+        </li>
+        <li class="tab-item">
+          <h3 class="tab-title">Кредит</h3>
+        </li>
+      </ul>
+      <ol class="service-categories">
+        <li class="service-item-current">
           <h3 class="service-title">Доставка</h3>
           <p class="service-description"> Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно
             бесплатно! Ведь мы неплохо
             заработаем, поднимая его на ваш этаж.</p>
         </li>
-        <li class="tab-item">
+        <li class="service-item">
           <h3 class="service-title">Гарантия</h3>
           <p class="service-description"> Если из-за возгорания купленного у нас товара у вас сгорит дом — не
             переживайте, мы выдадим вам новый.
             Товар, не дом, конечно же.</p>
         </li>
-        <li class="tab-item">
+        <li class="service-item">
           <h3 class="service-title">Кредит</h3>
           <p class="service-description"> Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас
             наиболее выгодные условия
@@ -269,15 +298,14 @@
     </section>
   </main>
   <footer class="page-footer">
-    <section class="footer-contacts">
-      <h2 class="visually-hidden">Контакты</h2>
+    <section class="footer-top">
       <img class="footer-contacts-logo" src="" alt="Логотип магазина &quot; Девайс &quot;">
+    </section>
+    <section class="footer-mid">
+      <h2 class="visually-hidden">Адрес</h2>
       <address class=" footer-contacts-address">
         <p class="about-text">Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
-        <a class="footer-contacts-address-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
       </address>
-    </section>
-    <section class="navigation-footer">
       <h2 class="visually-hidden">Наши сервисы</h2>
       <ul class="navigation-footer-list">
         <li class=" navigation-footer-item">
@@ -290,8 +318,12 @@
           <a class="navigation-footer-link" href="#">Контакты</a>
         </li>
       </ul>
+      <h2 class="visually-hidden">Телефон</h2>
+      <address class=" footer-contacts-address">
+        <a class="footer-contacts-address-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
+      </address>
     </section>
-    <section class="footer-social">
+    <section class="footer-bottom">
       <h2 class="visually-hidden">Мы в соцсетях</h2>
       <ul class="footer-social-list">
         <li class="footer-social-item">
