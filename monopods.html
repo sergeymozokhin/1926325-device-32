@@ -2,306 +2,314 @@
 <html lang="ru">
 
 <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Девайс: Каталог:Моноподы</title>
-    <link rel="stylesheet" href="styles/styles.css">
+  <meta charset="utf-8">
+  <title>HTML Academy: Девайс: Каталог:Моноподы</title>
+  <link rel="stylesheet" href="styles/normalize.css">
+  <link rel="stylesheet" href="styles/styles.css">
 </head>
 
 <body>
-    <header class="main-header monopods-header">
-        <nav class="navigation-bar">
-          <a class="navigation-logo" href="index.html">
-            <img class="page-header-logo" alt="Логотип магазина «Девайс»" src="img/logo-black.svg" width="145" height="36">
+  <header class="main-header monopods-header">
+    <nav class="navigation-bar">
+      <a class="navigation-logo" href="index.html">
+        <img class="page-header-logo" alt="Логотип магазина «Девайс»" src="img/logo-black.svg" width="145" height="36">
+      </a>
+      <ul class="navigation-list-top">
+        <li class="navigation-item">
+          <form class="search-form" action="https://echo.htmlacademy.ru/" method="post">
+            <input class="searh-input" placeholder="Поиск по сайту" name="site-search">
+            <button class="search-button" type="submit">
+              <span class="search-name">Найти</span>
+            </button>
+          </form>
+        </li>
+        <li class="navigation-item">
+          <a class="navigation-link" href="#">Войти</a>
+        </li>
+        <li class="navigation-item">
+          <a class="navigation-link" href="#">Сравнить</a>
+        </li>
+        <li class="navigation-item">
+          <a class="navigation-link" href="#">Корзина</a>
+        </li>
+      </ul>
+      <ul class="navigation-list-bottom">
+        <li class="navigation-item">
+          <span class="navigation-link-bottom"> Каталог товаров </span>
+          <button class="navigation-menu" type="button">
+            <span class="visually-hidden">Вложенное меню</span></button>
+          <ul class="nested-list">
+            <li class="nested-list-item">
+              <a class="nested-navigation-link" href="#"> Виртуальная реальность </a>
+            </li>
+            <li class="nested-list-item">
+              <a class="nested-navigation-link" href="monopods.html"> Моноподы для cелфи </a>
+            </li>
+            <li class="nested-list-item">
+              <a class="nested-navigation-link" href="#"> Экшн-камеры</a>
+            </li>
+            <li class="nested-list-item">
+              <a class="nested-navigation-link" href="#">Фитнес-браслеты</a>
+            </li>
+            <li class="nested-list-item">
+              <a class="nested-navigation-link" href="#">Умные часы</a>
+            </li>
+            <li class="nested-list-item">
+              <a class="nested-navigation-link" href="#">Квадрокоптеры</a>
+            </li>
+          </ul>
+        </li>
+        <li class="navigation-item">
+          <a class="navigation-link-bottom" href="#">Доставка</a>
+        </li>
+        <li class="navigation-item">
+          <a class="navigation-link-bottom" href="#">Гарантия</a>
+        </li>
+        <li class="navigation-item">
+          <a class="navigation-link-bottom" href="#">Контакты</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <main class="main-monopods">
+    <h1 class="inner-header-title">Моноподы для селфи</h1>
+    <ul class="breadcrumbs">
+      <li class="breadcrumbs-item">
+        <a class="breadcrumbs-link" href="index.html">Главная</a>
+      </li>
+      <li class="breadcrumbs-item">
+        <a class="breadcrumbs-link">Каталог</a>
+      </li>
+      <li class="breadcrumbs-item">
+        <a class="breadcrumbs-link">Моноподы для селфи</a>
+      </li>
+    </ul>
+    <aside class="monopods-products">
+      <div class="filter-title-inner">
+        <h2 class="filter-title">Фильтр</h2>
+      </div>
+      <div class="filter-inner">
+        <form class="monopods-filter" action="https://echo.htmlacademy.ru/" method="get">
+          <fieldset class="monopods-filter-group">
+            <legend class="monopods-filter-title">Стоимость</legend>
+            <button class="range-toggle toggle-min" type="button">
+              <span class="visually-hidden">Изменить минимальную цену.</span>
+            </button>
+            <button class="range-toggle toggle-max" type="button">
+              <span class="visually-hidden">Изменить максимальную цену.</span>
+            </button>
+
+            <label class="monopods-filter-label">
+              от <input class="monopods-filter-input" type="number" name="min-price">
+            </label>
+
+            <label class="monopods-filter-label">
+              до <input class="monopods-filter-input" type="number" name="max-price">
+            </label>
+          </fieldset>
+          <fieldset class="monopods-filter-group">
+            <legend class="monopods-filter-title">Цвет</legend>
+            <ul class="monopods-filter-list">
+              <li class="monopods-filter-item">
+                <label class="control">
+                  <input class="visually-hidden control-input" type="checkbox" name="black" checked>
+                  <span class="control-mark"></span>
+                  <span class="control-label">Черный</span>
+                </label>
+              </li>
+              <li class="monopods-filter-item">
+                <label class="control">
+                  <input class="visually-hidden control-input" type="checkbox" name="white" checked>
+                  <span class="control-mark"></span>
+                  <span class="control-label">Белый</span>
+                </label>
+              </li>
+              <li class="monopods-filter-item">
+                <label class="control">
+                  <input class="visually-hidden control-input" type="checkbox" name="blue">
+                  <span class="control-mark"></span>
+                  <span class="control-label">Синий</span>
+                </label>
+              </li>
+              <li class="monopods-filter-item">
+                <label class="control">
+                  <input class="visually-hidden control-input" type="checkbox" name="red">
+                  <span class="control-mark"></span>
+                  <span class="control-label">Красный</span>
+                </label>
+              </li>
+              <li class="monopods-filter-item">
+                <label class="control">
+                  <input class="visually-hidden control-input" type="checkbox" name="pink">
+                  <span class="control-mark"></span>
+                  <span class="control-label">Розовый</span>
+                </label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset class="monopods-filter-group">
+            <legend class="monopods-filter-title">Bluetooth</legend>
+            <ul class="monopods-filter-list">
+              <li class="monopods-filter-item">
+                <label class="control">
+                  <input class="visually-hidden control-input" type="radio" name="bluetooth-group" value="bluetooth-yes"
+                    checked>
+                  <span class="control-mark"></span>
+                  <span class="control-label">Есть</span>
+                </label>
+              </li>
+              <li class="monopods-filter-item">
+                <label class="control">
+                  <input class="visually-hidden control-input" type="radio" name="bluetooth-group" value="bluetooth-no">
+                  <span class="control-mark"></span>
+                  <span class="control-label">Нет</span>
+                </label>
+              </li>
+            </ul>
+          </fieldset>
+          <button class="button" type="submit">Показать</button>
+        </form>
+      </div>
+    </aside>
+    <div class="catalog-inner">
+      <div>
+        <div class="sorting-inner">
+          <form class="sorting-type" action="https://echo.htmlacademy.ru/" method="get">
+            <label class="visually-hidden" for="sorting">Сортировка</label>
+            <select class="select-control" id="sorting" name="sorting">
+              <option value="popular">Сначала популярное</option>
+              <option value="cheap">Сначала дешёвое</option>
+              <option value="expensive">Сначала дорогое</option>
+            </select>
+            <button class="visually-hidden" type="submit">Отсортировать продукты</button>
+          </form>
+          <a href="#" class="button button-light">
+            <span class="visually-hidden">Сортировка по убыванию</span>
           </a>
-          <ul class="navigation-list-top">
-            <li class="navigation-item">
-              <form class="search-form" action="https://echo.htmlacademy.ru/" method="post">
-                <input class="searh-input" placeholder="Поиск по сайту" name="site-search">
-                <button class="search-button" type="submit">
-                  <span class="search-name">Найти</span>
-                </button>
-              </form>
-            </li>
-            <li class="navigation-item">
-              <a class="navigation-link" href="#">Войти</a>
-            </li>
-            <li class="navigation-item">
-              <a class="navigation-link" href="#">Сравнить</a>
-            </li>
-            <li class="navigation-item">
-              <a class="navigation-link" href="#">Корзина</a>
-            </li>
-          </ul>
-          <ul class="navigation-list-bottom">
-            <li class="navigation-item">
-              <span class="navigation-link-bottom"> Каталог товаров </span>
-              <button class="navigation-menu" type="button">
-                <span class="visually-hidden">Вложенное меню</span></button>
-              <ul class="nested-list">
-                <li class="nested-list-item">
-                  <a class="nested-navigation-link" href="#"> Виртуальная реальность </a>
-                </li>
-                <li class="nested-list-item">
-                  <a class="nested-navigation-link" href="monopods.html"> Моноподы для cелфи </a>
-                </li>
-                <li class="nested-list-item">
-                  <a class="nested-navigation-link" href="#"> Экшн-камеры</a>
-                </li>
-                <li class="nested-list-item">
-                  <a class="nested-navigation-link" href="#">Фитнес-браслеты</a>
-                </li>
-                <li class="nested-list-item">
-                  <a class="nested-navigation-link" href="#">Умные часы</a>
-                </li>
-                <li class="nested-list-item">
-                  <a class="nested-navigation-link" href="#">Квадрокоптеры</a>
-                </li>
-              </ul>
-            </li>
-            <li class="navigation-item">
-              <a class="navigation-link-bottom" href="#">Доставка</a>
-            </li>
-            <li class="navigation-item">
-              <a class="navigation-link-bottom" href="#">Гарантия</a>
-            </li>
-            <li class="navigation-item">
-              <a class="navigation-link-bottom" href="#">Контакты</a>
-            </li>
-          </ul>
-        </nav>
-      </header>
-    <main class="main-monopods">
-        <h1 class="inner-header-title">Моноподы для селфи</h1>
-        <ul class="breadcrumbs">
-            <li class="breadcrumbs-item">
-                <a class="breadcrumbs-link" href="index.html">Главная</a>
-            </li>
-            <li class="breadcrumbs-item">
-                <a class="breadcrumbs-link">Каталог</a>
-            </li>
-            <li class="breadcrumbs-item">
-                <a class="breadcrumbs-link">Моноподы для селфи</a>
-            </li>
-        </ul>
-        <aside class="monopods-products">
-            <h2 class="filter-title">Фильтр</h2>
-            <form class="monopods-filter" action="https://echo.htmlacademy.ru/" method="get">
-                <fieldset class="monopods-filter-group">
-                    <legend class="monopods-filter-title">Стоимость</legend>
-                    <button class="range-toggle toggle-min" type="button">
-                        <span class="visually-hidden">Изменить минимальную цену.</span>
-                    </button>
-                    <button class="range-toggle toggle-max" type="button">
-                        <span class="visually-hidden">Изменить максимальную цену.</span>
-                    </button>
-
-                    <label class="monopods-filter-label">
-                        от <input class="monopods-filter-input" type="number" name="min-price">
-                    </label>
-
-                    <label class="monopods-filter-label">
-                        до <input class="monopods-filter-input" type="number" name="max-price">
-                    </label>
-
-                </fieldset>
-
-                <fieldset class="monopods-filter-group">
-                    <legend class="monopods-filter-title">Цвет</legend>
-                    <ul class="monopods-filter-list">
-                        <li class="monopods-filter-item">
-                            <label class="control">
-                                <input class="visually-hidden control-input" type="checkbox" name="black" checked>
-                                <span class="control-mark"></span>
-                                <span class="control-label">Черный</span>
-                            </label>
-                        </li>
-                        <li class="monopods-filter-item">
-                            <label class="control">
-                                <input class="visually-hidden control-input" type="checkbox" name="white" checked>
-                                <span class="control-mark"></span>
-                                <span class="control-label">Белый</span>
-                            </label>
-                        </li>
-                        <li class="monopods-filter-item">
-                            <label class="control">
-                                <input class="visually-hidden control-input" type="checkbox" name="blue">
-                                <span class="control-mark"></span>
-                                <span class="control-label">Синий</span>
-                            </label>
-                        </li>
-                        <li class="monopods-filter-item">
-                            <label class="control">
-                                <input class="visually-hidden control-input" type="checkbox" name="red">
-                                <span class="control-mark"></span>
-                                <span class="control-label">Красный</span>
-                            </label>
-                        </li>
-                        <li class="monopods-filter-item">
-                            <label class="control">
-                                <input class="visually-hidden control-input" type="checkbox" name="pink">
-                                <span class="control-mark"></span>
-                                <span class="control-label">Розовый</span>
-                            </label>
-                        </li>
-                    </ul>
-                </fieldset>
-                <fieldset class="monopods-filter-group">
-                    <legend class="monopods-filter-title">Bluetooth</legend>
-                    <ul class="monopods-filter-list">
-                        <li class="monopods-filter-item">
-                            <label class="control">
-                                <input class="visually-hidden control-input" type="radio" name="bluetooth-group"
-                                    value="bluetooth-yes" checked>
-                                <span class="control-mark"></span>
-                                <span class="control-label">Есть</span>
-                            </label>
-                        </li>
-                        <li class="monopods-filter-item">
-                            <label class="control">
-                                <input class="visually-hidden control-input" type="radio" name="bluetooth-group"
-                                    value="bluetooth-no">
-                                <span class="control-mark"></span>
-                                <span class="control-label">Нет</span>
-                            </label>
-                        </li>
-                    </ul>
-                </fieldset>
-                <button class="button" type="submit">Показать</button>
-            </form>
-        </aside>
-        <div>
-            <div>
-                <form class="sorting-type" action="https://echo.htmlacademy.ru/" method="get">
-                    <label class="visually-hidden" for="sorting">Сортировка</label>
-                    <select class="select-control" id="sorting" name="sorting">
-                        <option value="popular">Сначала популярное</option>
-                        <option value="cheap">Сначала дешёвое</option>
-                        <option value="expensive">Сначала дорогое</option>
-                    </select>
-                    <button class="visually-hidden" type="submit">Отсортировать продукты</button>
-                </form>
-                <a href="#" class="button button-light">
-                    <span class="visually-hidden">Сортировка по убыванию</span>
-                </a>
-                <a class="button" href="#">
-                    <span class="visually-hidden">Сортировка по возрастанию</span>
-                </a>
-            </div>
-            <ul class="product-list">
-                <li class="product-card">
-                    <a class="product-card-link" href="#">
-                        <img class="product-card-image" src="img/monopods/product-1.png" alt="изображение любительской селфи-палки">
-                        <h3 class="product-card-title">Любительская селфи-палка</h3>
-                    </a>
-                    <b class="product-card-price">500 ₽</b>
-                    <a class="product-card-button button" href="#">Подробнее</a>
-                </li>
-                <li class="product-card">
-                    <a class="product-card-link" href="#">
-                        <img class="product-card-image" src="img/monopods/product-2.png" alt="изображение профессиональной селфи-палки">
-                        <h3 class="product-card-title">Профессиональная селфи-палка</h3>
-                    </a>
-                    <b class="product-card-price">1500 ₽</b>
-                    <a class="product-card-button button" href="#">Подробнее</a>
-                </li>
-                <li class="product-card">
-                    <a class="product-card-link" href="#">
-                        <img class="product-card-image" src="img/monopods/product-3.png" alt="изображение непотопляемой селфи-палки">
-                        <h3 class="product-card-title">Непотопляемая селфи-палка</h3>
-                    </a>
-                    <b class="product-card-price">2500 ₽</b>
-                    <a class="product-card-button button" href="#">Подробнее</a>
-                </li>
-                <li class="product-card">
-                    <a class="product-card-link" href="#">
-                        <img class="product-card-image" src="img/monopods/product-4.png" alt="изображение специальной селфи-палки">
-                        <h3 class="product-card-title">Селфи-палка «Следуй за мной»</h3>
-                    </a>
-                    <b class="product-card-price">4900 ₽</b>
-                    <a class="product-card-button button" href="#">Подробнее</a>
-                </li>
-            </ul>
-            <button class="button product-card-show-more" type="button">Загрузить ещё</button>
-            <ul class="pagination">
-                <li class="pagination-item">
-                    <a class="pagination-link pagination-prev" href="#">
-                        <span class="">Назад</span>
-                    </a>
-                </li>
-                <li class="pagination-item">
-                    <a class="pagination-link" href="#">1</a>
-                </li>
-                <li class="pagination-item">
-                    <a class="pagination-link" href="#">2</a>
-                </li>
-                <li class="pagination-item">
-                    <a class="pagination-link" href="#">3</a>
-                </li>
-                <li class="pagination-item">
-                    <button class="button pagination-show-more" type="button">
-                        <span class="visually-hidden">Следующие страницы</span>
-                    </button>
-                </li>
-                <li class="pagination-item">
-                    <a class="pagination-link" href="#">15</a>
-                </li>
-                <li class="pagination-item">
-                    <a class="pagination-link pagination-next" href="#">
-                        <span class="">Вперед</span>
-                    </a>
-                </li>
-            </ul>
+          <a class="button" href="#">
+            <span class="visually-hidden">Сортировка по возрастанию</span>
+          </a>
         </div>
-    </main>
-    <footer class="page-footer">
-        <section class="footer-top">
-          <img class="footer-contacts-logo" src="img/logo-yellow.svg" width="145" height="36"
-            alt="Логотип магазина &quot; Девайс &quot;">
-        </section>
-        <section class="footer-mid">
-          <h2 class="visually-hidden">Адрес</h2>
-          <address class=" footer-contacts-address">
-            <p class="about-text">Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
-          </address>
-          <h2 class="visually-hidden">Наши сервисы</h2>
-          <ul class="navigation-footer-list">
-            <li class=" navigation-footer-item">
-              <a class="navigation-footer-link" href="#">Доставка</a>
-            </li>
-            <li class="navigation-footer-item">
-              <a class="navigation-footer-link" href="#">Гарантия</a>
-            </li>
-            <li class="navigation-footer-item">
-              <a class="navigation-footer-link" href="#">Контакты</a>
-            </li>
-          </ul>
-          <h2 class="visually-hidden">Телефон</h2>
-          <address class=" footer-contacts-address">
-            <a class="footer-contacts-address-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
-          </address>
-        </section>
-        <section class="footer-bottom">
-          <h2 class="visually-hidden">Мы в соцсетях</h2>
-          <ul class="footer-social-list">
-            <li class="footer-social-item">
-              <a class="button" href="#">
-                <span class="visually-hidden">Фэйсбук</span>
-              </a>
-            </li>
-            <li class="footer-social-item">
-              <a class="button" href="#">
-                <span class="visually-hidden">Инстаграм</span>
-              </a>
-            </li>
-            <li class="footer-social-item">
-              <a class="button" href="#">
-                <span class="visually-hidden">Твиттер</span>
-              </a>
-            </li>
-          </ul>
-          <a class="htmlacademy-link" href="https://htmlacademy.ru/">.html academy</a>
-        </section>
-      </footer>
+      </div>
+      <ul class="product-list">
+        <li class="product-card">
+          <a class="product-card-link" href="#">
+            <img class="product-card-image" src="img/monopods/product-1.png" alt="изображение любительской селфи-палки">
+            <h3 class="product-card-title">Любительская селфи-палка</h3>
+          </a>
+          <b class="product-card-price">500 ₽</b>
+          <a class="product-card-button button" href="#">Подробнее</a>
+        </li>
+        <li class="product-card">
+          <a class="product-card-link" href="#">
+            <img class="product-card-image" src="img/monopods/product-2.png"
+              alt="изображение профессиональной селфи-палки">
+            <h3 class="product-card-title">Профессиональная селфи-палка</h3>
+          </a>
+          <b class="product-card-price">1500 ₽</b>
+          <a class="product-card-button button" href="#">Подробнее</a>
+        </li>
+        <li class="product-card">
+          <a class="product-card-link" href="#">
+            <img class="product-card-image" src="img/monopods/product-3.png"
+              alt="изображение непотопляемой селфи-палки">
+            <h3 class="product-card-title">Непотопляемая селфи-палка</h3>
+          </a>
+          <b class="product-card-price">2500 ₽</b>
+          <a class="product-card-button button" href="#">Подробнее</a>
+        </li>
+        <li class="product-card">
+          <a class="product-card-link" href="#">
+            <img class="product-card-image" src="img/monopods/product-4.png" alt="изображение специальной селфи-палки">
+            <h3 class="product-card-title">Селфи-палка «Следуй за мной»</h3>
+          </a>
+          <b class="product-card-price">4900 ₽</b>
+          <a class="product-card-button button" href="#">Подробнее</a>
+        </li>
+      </ul>
+      <button class="button product-card-show-more" type="button">Загрузить ещё</button>
+      <ul class="pagination">
+        <li class="pagination-item">
+          <a class="pagination-link pagination-prev" href="#">
+            <span class="">Назад</span>
+          </a>
+        </li>
+        <li class="pagination-item">
+          <a class="pagination-link" href="#">1</a>
+        </li>
+        <li class="pagination-item">
+          <a class="pagination-link" href="#">2</a>
+        </li>
+        <li class="pagination-item">
+          <a class="pagination-link" href="#">3</a>
+        </li>
+        <li class="pagination-item">
+          <button class="button pagination-show-more" type="button">
+            <span class="visually-hidden">Следующие страницы</span>
+          </button>
+        </li>
+        <li class="pagination-item">
+          <a class="pagination-link" href="#">15</a>
+        </li>
+        <li class="pagination-item">
+          <a class="pagination-link pagination-next" href="#">
+            <span class="">Вперед</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </main>
+  <footer class="page-footer">
+    <section class="footer-top">
+      <a class="footer-logo" href="index.html">
+        <img class="footer-contacts-logo" src="img/logo-yellow.svg" width="145" height="36"
+          alt="Логотип магазина &quot; Девайс &quot;">
+      </a>
+    </section>
+    <section class="footer-mid">
+      <h2 class="visually-hidden">Адрес</h2>
+      <address class=" footer-contacts-address">
+        <p class="about-text">Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
+      </address>
+      <h2 class="visually-hidden">Наши сервисы</h2>
+      <ul class="navigation-footer-list">
+        <li class=" navigation-footer-item">
+          <a class="navigation-footer-link" href="#">Доставка</a>
+        </li>
+        <li class="navigation-footer-item">
+          <a class="navigation-footer-link" href="#">Гарантия</a>
+        </li>
+        <li class="navigation-footer-item">
+          <a class="navigation-footer-link" href="#">Контакты</a>
+        </li>
+      </ul>
+      <h2 class="visually-hidden">Телефон</h2>
+      <address class=" footer-contacts-address">
+        <a class="footer-contacts-address-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
+      </address>
+    </section>
+    <section class="footer-bottom">
+      <h2 class="visually-hidden">Мы в соцсетях</h2>
+      <ul class="footer-social-list">
+        <li class="footer-social-item">
+          <a class="button" href="#">
+            <span class="visually-hidden">Фэйсбук</span>
+          </a>
+        </li>
+        <li class="footer-social-item">
+          <a class="button" href="#">
+            <span class="visually-hidden">Инстаграм</span>
+          </a>
+        </li>
+        <li class="footer-social-item">
+          <a class="button" href="#">
+            <span class="visually-hidden">Твиттер</span>
+          </a>
+        </li>
+      </ul>
+      <a class="htmlacademy-link" href="https://htmlacademy.ru/">.html academy</a>
+    </section>
+  </footer>
 </body>
 
 </html>

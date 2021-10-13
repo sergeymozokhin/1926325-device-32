@@ -58,6 +58,9 @@ body {
   text-align: center;
   color: #000000;
 }
+
+/*стили для хедера*/
+
 .main-header {
   background: #ffe17f;
   color: #000000;
@@ -93,6 +96,9 @@ body {
   text-decoration: none;
   color: #000000;
 }
+
+/*стили для сладейра*/
+
 .slider-item-number {
   font-weight: 800;
   font-size: 180px;
@@ -142,10 +148,29 @@ body {
   text-decoration: none;
   color: #000000;
 }
-.services,
+
+.services {
+background-image: linear-gradient(white, #f0f0f0);
+}
+.service-inner {
+  box-sizing: border-box;
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+}
 .delivery,
 .mail-list {
   background: #f0f0f0;
+}
+.mail-list-inner {
+  box-sizing: border-box;
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 .tab-title {
   font-family: Raleway;
@@ -214,9 +239,20 @@ body {
   line-height: 50px;
   color: #000000;
 }
+
+/*стили для футера*/
+
 .page-footer {
   background: #444444;
   color: #ffffff;
+}
+.page-footer-inner {
+  box-sizing: border-box;
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 .footer-contacts-address {
   font-style: normal;
@@ -245,4 +281,19 @@ body {
 .page-footer .htmlacademy-link {
   font-size: 14px;
   color: #dbb590;
+}
+
+/*Для страницы каталога*/
+
+.filter-title-inner {
+  background-color: #DCDCDC;
+}
+.filter-inner {
+  background-color:  #EBEBEB;
+}
+.sorting-inner {
+  background-color:  #EBEBEB;
+}
+.pagination {
+  background-color:  #EBEBEB;
 }
