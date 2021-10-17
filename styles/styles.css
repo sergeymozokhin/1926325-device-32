@@ -30,7 +30,16 @@
   src: url("../fonts/raleway/raleway-800.woff2") format("woff2");
   font-display: swap;
 }
+
+html {
+  height: 100%;
+}
+
 body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
   font-family: "Rubik", sans-serif;
   font-size: 18px;
   line-height: 30px;
@@ -49,6 +58,16 @@ body {
   color: #000000;
   text-decoration: none;
 }
+/* .visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+} */
 .search-button {
   font-family: Rubik;
   font-style: normal;
@@ -64,7 +83,28 @@ body {
 .main-header {
   background: #ffe17f;
   color: #000000;
+  width: 1160px;
+  margin: 0 auto;
 }
+.navigation-bar {
+  display: flex;
+  flex-direction: column;
+  width: 1160px;
+  margin: 0 auto;
+}
+.navigation-list-top {
+  display: flex;
+  width: 1075px;
+  margin: 0;
+  padding: 0;
+}
+.navigation-list-bottom {
+  display: flex;
+  width: 1040px;
+  margin: 0;
+  padding: 0;
+}
+
 .navigation-link {
   font-family: Rubik;
   font-style: normal;
@@ -97,9 +137,23 @@ body {
   color: #000000;
 }
 
+.main-container {
+  flex-grow: 1;
+}
+.page-container {
+  width: 1160px;
+  margin: 0 auto;
+}
 /*стили для сладейра*/
-
+.slider-item {
+  display: flex;
+}
+.slider-description {
+  display: flex;
+  flex-direction: column;
+}
 .slider-item-number {
+  display: block;
   font-weight: 800;
   font-size: 180px;
   line-height: 30px;
@@ -108,11 +162,15 @@ body {
   color: black; /*временно чтобы было видно, потом поменять на белый*/
 }
 .slider-item-slogan {
+  display: block;
   font-family: Raleway;
   font-style: normal;
   font-weight: 800;
   font-size: 50px;
   line-height: 50px;
+}
+.slider-item-description {
+  display: block;
 }
 .item-value {
   font-family: Rubik;
@@ -138,6 +196,17 @@ body {
   text-decoration: none;
   color: #000000;
 }
+.categories-list {
+  display: flex;
+  justify-content: space-between;
+  width: 1160px;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+.category {
+  width: 160px;
+}
 .category-link {
   font-family: Raleway;
   font-style: normal;
@@ -150,15 +219,38 @@ body {
 }
 
 .services {
-background-image: linear-gradient(white, #f0f0f0);
+  background-image: linear-gradient(white, #f0f0f0);
 }
 .service-inner {
-  box-sizing: border-box;
-  width: 1200px;
-  margin-left: auto;
+  /* box-sizing: border-box;
+  width: 1200px; */
+  display: flex;
+  /* margin-left: auto;
   margin-right: auto;
   padding-left: 20px;
-  padding-right: 20px;
+  padding-right: 20px; */
+}
+.service-tabs {
+  display: flex;
+  flex-direction: column;
+  width: 280px;
+  margin: 0;
+  padding: 0;
+}
+.tab-item-current,
+.tab-item {
+  width: 280px;
+}
+
+.info-columns {
+  display: flex;
+  justify-content: space-between;
+}
+.about-us {
+  width: 560px;
+}
+.contact-us {
+  width: 560px;
 }
 .delivery,
 .mail-list {
@@ -247,22 +339,55 @@ background-image: linear-gradient(white, #f0f0f0);
   color: #ffffff;
 }
 .page-footer-inner {
-  box-sizing: border-box;
+  /*  box-sizing: border-box;
   width: 1200px;
   margin-left: auto;
   margin-right: auto;
   padding-left: 20px;
-  padding-right: 20px;
+  padding-right: 20px; */
+  display: flex;
+  flex-direction: column;
+  width: 1160px;
+  margin: 0 auto;
+}
+.footer-logo {
+  width: 150px;
+}
+
+.footer-mid {
+  display: flex;
+  justify-content: space-between;
+}
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
 }
 .footer-contacts-address {
   font-style: normal;
   font-size: 16px;
   line-height: 19px;
+  width: 238px;
 }
 .footer-contacts-address-phone {
   font-style: normal;
   text-decoration: none;
   text-align: right;
+  width: 293px;
+}
+.footer-social-list {
+  display: flex;
+  width: 250px;
+  margin: 0;
+  padding: 0;
+}
+.navigation-footer-list {
+  width: 458px;
+}
+.footer-contacts-address {
+  width: 293px;
+}
+.htmlacademy-link {
+  width: 115px;
 }
 .navigation-footer-link {
   font-family: Raleway;
@@ -286,14 +411,23 @@ background-image: linear-gradient(white, #f0f0f0);
 /*Для страницы каталога*/
 
 .filter-title-inner {
-  background-color: #DCDCDC;
+  background-color: #dcdcdc;
 }
 .filter-inner {
-  background-color:  #EBEBEB;
+  background-color: #ebebeb;
+}
+.catalog-page {
+  display: flex;
+}
+.monopods-products {
+  width: 468px;
+}
+.catalog-right-column {
+  width: 972px;
 }
 .sorting-inner {
-  background-color:  #EBEBEB;
+  background-color: #ebebeb;
 }
 .pagination {
-  background-color:  #EBEBEB;
+  background-color: #ebebeb;
 }
