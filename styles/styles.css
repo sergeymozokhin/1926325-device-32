@@ -356,33 +356,39 @@ body {
 
 .footer-mid {
   display: flex;
-  justify-content: space-between;
 }
 .footer-mid-left {
-  flex-basis: 239px;
+  flex-basis: 300px;
   flex-shrink: 0;
 }
 .footer-mid-center {
   flex-grow: 1;
+  display: flex;
+  justify-content: center;
 }
 .footer-mid-right {
-  flex-basis: 293px;
+  flex-basis: 300px;
   flex-shrink: 0;
+  display: flex;
+  justify-content: flex-end;
 }
 .footer-bottom {
   display: flex;
-  justify-content: space-between;
 }
 .footer-bottom-left {
-  flex-basis: 80px;
+  flex-basis: 300px;
   flex-shrink: 0;
 }
 .footer-bottom-center {
   flex-grow: 1;
+  display: flex;
+  justify-content: center;
 }
 .footer-bottom-right {
-  flex-basis: 115px;
+  flex-basis: 300px;
   flex-shrink: 0;
+  display: flex;
+  justify-content: flex-end;
 }
 .footer-contacts-address {
   font-style: normal;
@@ -393,23 +399,29 @@ body {
   font-style: normal;
   text-decoration: none;
   text-align: right;
-  width: 293px;
 }
 .footer-social-list {
   display: flex;
-  width: 250px;
+  flex-wrap: wrap; 
   margin: 0;
   padding: 0;
   list-style-type: none;
 }
+.footer-social-item {
+  width: 40px;
+  height: 40px;
+  margin-right: 15px;
+  border: solid red 1px; /* временно чтобы видно было на макете */
+}
 .navigation-footer-list {
-  width: 458px;
+  display: flex;
   list-style-type: none;
 }
 /* .htmlacademy-link {
   width: 115px;
 } */
 .navigation-footer-link {
+  display: block;
   font-family: Raleway;
   font-style: normal;
   font-weight: 800;
@@ -419,6 +431,8 @@ body {
   letter-spacing: 0.2em;
   text-transform: uppercase;
   text-decoration: none;
+  width: 148px;
+  margin-left: 7px;
 }
 .page-footer a {
   color: #ffffff;
