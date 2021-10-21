@@ -454,10 +454,11 @@ body {
   display: flex;
 }
 .monopods-products {
-  width: 468px;
+  flex-shrink: 0;
+  flex-basis: 329px;
 }
 .catalog-right-column {
-  width: 972px;
+  flex-grow: 1;
 }
 .sorting-inner {
   background-color: #ebebeb;
